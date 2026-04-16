@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="logo">MyPortfolio</div>
+
+  <nav class="nav">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero">
+
+  <div class="hero-content">
+    <h1>Hi, I am <span>Jed Aeron Torres</span></h1>
+    <p>Good to see you. Let's explore MyPortfolio.</p>
+
+    <div class="buttons">
+      <button class="btn-outline" id="aboutBtn">ABOUT ME</button>
+      <button class="btn-solid" id="learnBtn">LEARN MORE</button>
+    </div>
+
+    <div class="socials">
+      <a href="https://facebook.com" target="_blank" data-tooltip="Facebook"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://instagram.com" target="_blank" data-tooltip="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://github.com/jedaerontorres-hub" target="_blank" data-tooltip="Github"><i class="fab fa-github"></i></a>
+    </div>
+  </div>
+
+  <div class="hero-image">
+    <img src="profile.png" alt="">
+  </div>
+
+</section>
+
+<!-- ABOUT SECTION -->
+<section id="about" class="about">
+
+  <div class="about-info">
+    <img src="profile.png">
+    <h3>About Me</h3>
+    <p>I am someone who embraces life fully and strives to grow every day.</p>
+    <p>I am a driven and passionate individual who believes in continuous growth and pushing beyond limits.</p>
+    <p>I am committed to evolving, exploring new possibilities, and making a positive impact through innovation. <br>
+       I believe in staying dedicated to my goals and becoming the best version of myself while contributing to 
+       a future where technology empowers and connects people.
+    </p>
+  </div>
+
+<h2 class="about-inte">Interest with</h2> 
+    
+  <div class="about-gallery">
+    <img src="taekwondo.webp">
+    <img src="basketball.jpg">
+    <img src="ml.jpg">
+    <img src="books.avif">
+  </div>
+
+  <h2 class="about-title">Knowledgable in</h2>
+
+  <div class="team">
+    <div class="card orange">
+      <img src="html.png">
+      <p>HTML</p>
+    </div>
+
+    <div class="card blue">
+      <img src="css.png">
+      <p>CSS</p>
+    </div>
+
+    <div class="card orange">
+      <img src="php.png">
+      <p>PHP</p>
+    </div>
+
+    <div class="card blue">
+      <img src="python.png">
+      <p>PYTHON</p>
+    </div>
+  </div>
+
+</section>
+
+<!-- PLACEHOLDER SECTIONS -->
+<section id="projects" class="projects">
+
+  <h2 class="section-title">My Projects</h2>
+
+  <div class="project-container">
+
+    <!-- PROJECT 1 -->
+  <div class="project-card">
+  <img src="calculator.png" alt="">
+  <div class="project-info">
+    <h3>Calculator App</h3>
+    <p>Basic calculator using HTML, CSS, JavaScript.</p>
+    <a href="file:///C:/Users/CLIENT/OneDrive/Desktop/lab4_DCIT26/index.html" target="_blank">
+      <button class="view-btn">View</button>
+    </a>
+  </div>
+</div>
+
+    <div class="project-card">
+  <img src="todolist.png" alt="">
+  <div class="project-info">
+    <h3>Calculator App</h3>
+    <p>Basic calculator using HTML, CSS, JavaScript.</p>
+    <a href="file:///C:/Users/CLIENT/OneDrive/Desktop/to-do/todo.html" target="_blank">
+      <button class="view-btn">View</button>
+    </a>
+  </div>
+</div>
+  <div class="project-card">
+  <img src="digitalclock.png" alt="">
+  <div class="project-info">
+    <h3>Calculator App</h3>
+    <p>Basic calculator using HTML, CSS, JavaScript.</p>
+    <a href="file:///C:/Users/CLIENT/OneDrive/Desktop/clock/clock.html" target="_blank">
+      <button class="view-btn">View</button>
+    </a>
+  </div>
+
+  </div>
+
+</section>
+
+<section id="resume" class="resume">
+
+  <h2 class="section-title">Resume</h2>
+
+  <div class="resume-box">
+
+    <!-- LEFT IMAGE -->
+    <div class="resume-img">
+      <img src="profile.png" alt="My Picture">
+    </div>
+
+    <!-- RIGHT CONTENT -->
+    <div class="resume-content">
+      <h3>Jed Aeron Torres</h3>
+      <p class="role">Information Technology Student</p>
+
+      <hr>
+
+      <p><strong>Education:</strong> BS Information Technology</p>
+      <p><strong>School:</strong> Cavite State University Tanza - Campus</p>
+      <p><strong>Status:</strong> College Student</p>
+
+      <hr>
+
+      <p><strong>Skills:</strong></p>
+      <p>HTML • CSS • JavaScript • PHP • Python</p>
+
+      <hr>
+
+      <p><strong>Projects:</strong></p>
+      <p>Calculator App, To-Do List, Digital Clock</p>
+
+     <button class="resume-btn" onclick="downloadCV()">Download CV</button>
+    </div>
+
+  </div>
+
+</section>
+
+</section>
+
+<section id="contact" class="contact">
+
+  <h2 class="section-title">Contact Me</h2>
+
+  <div class="contact-box">
+
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message" required></textarea>
+
+    <button onclick="sendMessage()">Send Message</button>
+
+  </div>
+
+</section>
+
+<footer class="footer">
+  <p>© 2026 Jed Aeron Torres. All Rights Reserved.</p>
+</footer>
+
+<!-- JS -->
+<script>
+
+function downloadCV() {
+  alert("Your CV is downloading...");
+  window.location.href = "resume.pdf";
+}
+
+function sendMessage() {
+  let inputs = document.querySelectorAll(".contact-box input, .contact-box textarea");
+
+  for (let i = 0; i < inputs.length; i++) {
+    if (inputs[i].value.trim() === "") {
+      alert("Please fill all fields!");
+      return;
+    }
+  }
+
+  alert("Message sent successfully!");
+}
+
+/* HEADER SCROLL */
+window.addEventListener("scroll", () => {
+  document.querySelector(".header")
+    .classList.toggle("scrolled", window.scrollY > 50);
+});
+
+/* BUTTONS */
+document.getElementById("aboutBtn").onclick = () => {
+  document.getElementById("about").scrollIntoView({ behavior: "smooth" });
+};
+
+document.getElementById("learnBtn").onclick = () => {
+  document.getElementById("projects").scrollIntoView({ behavior: "smooth" });
+};
+
+/* NAV SCROLL */
+document.querySelectorAll(".nav a").forEach(link => {
+  link.addEventListener("click", function(e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute("href"))
+      .scrollIntoView({ behavior: "smooth" });
+  });
+});
+
+/* PROJECT ALERTS */
+document.querySelectorAll(".view-btn").forEach((btn, index) => {
+  btn.addEventListener("click", () => {
+    alert("Project " + (index + 1) + " clicked!");
+  });
+});
+
+</script>
+
+</body>
+</html>
